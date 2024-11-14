@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP</title>
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #fff;
+        }
+        .container{
+            background: #333;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+
+        }
+        h1{
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        p{
+            color: #ccc;
+        }
+        
+        .var{
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+
+        }
+    
+        
+        otp-input{
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            font-size: 18px;
+            border: 1px solid #555;
+            border-radius: 4px;
+            outline: none;
+            background: #222;
+            color: #fff;
+            transition: border-color 0.3s;
+
+
+        }
+        .otp-input:focus{
+            border-color: #007bff;
+        }
+        .submit-btn{
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .submit-btn:hoover {
+            background-color: #0056b3;
+
+        }
+        .resend-otp{
+            margin-top: 15px;
+        }
+        .resend-otp a{
+            color: #007bff;
+            text-decoration: none;
+        }
+        .resend-otp a:hoover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>OTP Verification</h1>
+        <p>Please enter the OTP sent to your email.</p>
+        <form id="otp-form">
+            <div class="var">
+                <input type="text" maxlength="1" class="otp-input" required/>
+                <input type="text" maxlength="1" class="otp-input" required/>
+                <input type="text" maxlength="1" class="otp-input" required/>
+                <input type="text" maxlength="1" class="otp-input" required/>
+            </div>
+            <button type="submit" class="submit-btn">Verify OTP</button>
+
+        </form>
+        <p class="resend-otp">Didn't receive the OTP? <a href="#">Resend OTP</a></p>
+        
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        
+        nav {
+            background-color: #333;
+        }
+        
+        .menu {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        
+        .menu > li {
+            position: relative;
+            padding: 15px 20px;
+            color: white;
+        }
+        
+        .menu > li:hover {
+            background-color: #444; /* Change background on hover */
+        }
+        
+        .dropdown {
+            display: none; /* Hide dropdown by default */
+            position: absolute;
+            background-color: #333;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            min-width: 160px; /* Minimum width for dropdown */
+            z-index: 1; /* Ensure dropdown appears above other content */
+        }
+        
+        .dropdown li {
+            padding: 12px 16px;
+        }
+        
+        .dropdown li a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .menu > li:hover .dropdown {
+            display: block; /* Show dropdown on hover */
+        }
+        
+        .dropdown li:hover {
+            background-color: #444; /* Change background on hover in dropdown */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+            <li>Home</li>
+            <li>About
+                <ul class="dropdown">
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Mission</a></li>
+                </ul>
+            </li>
+            <li>Services
+                <ul class="dropdown">
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">SEO</a></li>
+                </ul>
+            </li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</body>
+</html>

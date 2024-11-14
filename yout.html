@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Platform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #ff0000;
+            color: white;
+        }
+        
+        .logo h1 {
+            font-size: 24px;
+        }
+        
+        .search-bar {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            padding: 0 20px;
+        }
+        
+        .search-bar input {
+            width: 50%;
+            padding: 8px;
+            border: none;
+            border-radius: 3px;
+        }
+        
+        .search-bar button {
+            padding: 8px 12px;
+            background-color: white;
+            color: #ff0000;
+            border: none;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+        
+        .user-menu img.user-icon {
+            width: 40px;
+            border-radius: 50%;
+        }
+        
+        main {
+            display: flex;
+            margin: 20px;
+        }
+        
+        .video-container {
+            width: 70%;
+            margin-right: 20px;
+        }
+        
+        .main-video iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
+        
+        .video-info {
+            margin-top: 10px;
+        }
+        
+        .video-info h2 {
+            font-size: 24px;
+        }
+        
+        .video-stats {
+            color: gray;
+            margin-top: 5px;
+        }
+        
+        .video-actions {
+            margin-top: 10px;
+        }
+        
+        .video-actions button {
+            padding: 10px;
+            margin-right: 5px;
+            border: none;
+            background-color: #ff0000;
+            color: white;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        
+        .suggested-videos {
+            width: 30%;
+        }
+        
+        .suggested-videos h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .suggested-videos ul {
+            list-style-type: none;
+        }
+        
+        .suggested-videos ul li {
+            margin-bottom: 10px;
+        }
+        
+        .suggested-videos ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+        
+        .suggested-videos ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>MyTube</h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+        <div class="user-me">
+            <img src="user-icon.png" alt="User Icon" class="user-icon">
+        </div>
+    </header>
+    <main>
+        <div class="video-container">
+            <div class="main-video">
+                <iframe width="100%" height="500" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+                <h2>Sample Video Title</h2>
+                <div class="video-stats">
+                    <span>1,234,567 views • 2 days ago</span>
+                                </div>
+                <div class="video-actions">
+                    <button>Like</button>
+                    <button>Dislike</button>
+                    <button>Share</button>
+                </div>
+            </div>
+        </div>
+        <div class="suggested-videos">
+            <h3>Suggested Videos</h3>
+            <ul>
+                <li><a href="#">Suggested Video 1</a></li>
+                <li><a href="#">Suggested Video 2</a></li>
+                <li><a href="#">Suggested Video 3</a></li>
+                <li><a href="#">Suggested Video 4</a></li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>
+video.mp4

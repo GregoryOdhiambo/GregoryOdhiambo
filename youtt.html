@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #f00;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .container {
+            display: flex;
+            margin: 20px;
+        }
+        
+        main {
+            flex: 3;
+            padding-right: 20px;
+        }
+        
+        video {
+            width: 100%;
+            height: auto;
+        }
+        
+        aside {
+            flex: 1;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-left: 1px solid #ccc;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f00;
+            color: white;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>YouTube Clone</h1>
+        <input type="text" placeholder="Search...">
+    </header>
+    <div class="container">
+        <main>
+            <div class="video">
+                <h2>Video Title</h2>
+                <video controls>
+                    <source src="c:\Users\GREGORY\Desktop\Download (4).mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Description of the video goes here.</p>
+            </div>
+        </main>
+        <aside>
+            <h2>Suggested Videos</h2>
+            <ul>
+                <li>Suggested Video 1</li>
+                <li>Suggested Video 2</li>
+                <li>Suggested Video 3</li>
+                <li>Suggested Video 4</li>
+            </ul>
+        </aside>
+    </div>
+    <footer>
+        <p>&copy; 2023 YouTube Clone</p>
+    </footer>
+</body>
+</html>
